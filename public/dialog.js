@@ -6,19 +6,16 @@ function showMessageBox(options, cb) {
   if (messageBoxOpen) {
     return
   }
-
   messageBoxOpen = true
-  dialog.showMessageBox(
-    options,
-    (selectedIndex) => {
-      try {
-        cb(selectedIndex)
-      }
-      finally {
-        messageBoxOpen = false
-      }
+
+  dialog.showMessageBox(options).then((data) => {
+    try {
+      cb(data.response)
     }
-  )
+    finally {
+      messageBoxOpen = false
+    }
+  })
 }
 
 module.exports = { showMessageBox }
