@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './Preferences.css'
 
 const { ipc } = window
+
 class Preferences extends Component {
   constructor(props) {
     super(props)

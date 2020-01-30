@@ -1,5 +1,11 @@
 const { logger } = window
+
 logger.transports.file.appName = 'publish50'
 logger.transports.file.fileName = 'renderer.log'
 
-module.exports = logger
+// TODO
+function error (arg) {
+  return
+}
+
+export { logger, error }

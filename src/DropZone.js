@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 import './DropZone.css'
 import fileUploadIcon from './assets/images/file_upload.svg'
 
@@ -33,8 +32,6 @@ class DropZone extends React.Component {
         })
       }
     }
-
-
   }
 
   onDrag(e) {

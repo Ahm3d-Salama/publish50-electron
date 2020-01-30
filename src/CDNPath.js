@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Autocomplete from 'react-autocomplete'
 import AWS from 'aws-sdk'
 
-import * as logger from './logger'
+import * as logger from './logger.js'
 import './CDNPath.css'
 
 let controller = new AbortController()

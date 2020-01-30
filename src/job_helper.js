@@ -1,4 +1,4 @@
-const path = require('path')
+import * as path from 'path'
 
 function truncate(s) {
   if (s.length > 32)
@@ -7,7 +7,7 @@ function truncate(s) {
   return s
 }
 
-function getJobDescription (job) {
+export function getJobDescription (job) {
   const {name, data} = job
 
   switch(name) {
@@ -23,5 +23,3 @@ function getJobDescription (job) {
       return 'Unknown job'
   }
 }
-
-module.exports = { getJobDescription }
