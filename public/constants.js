@@ -75,7 +75,7 @@ module.exports = {
       mp4: "aac",
     },
     video: {
-      mp4: "libx264"
+      mp4: "h264_nvenc"
     }
   }
 }

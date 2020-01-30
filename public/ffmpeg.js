@@ -181,7 +181,7 @@ function ffmpeg(videoPath) {
             '-strict', 'experimental',
             '-profile:v', rasters[raster].profile,
             '-vf', `scale=${rasters[raster].scale[widescreen ? 'widescreen' : 'standard']}`,
-            '-x264opts', 'keyint=24:min-keyint=24:no-scenecut'
+            // '-x264opts', 'keyint=24:min-keyint=24:no-scenecut'
           )
 
           new Promise((resolve, reject) => {
